@@ -117,3 +117,53 @@
 // // or 
 
 // console.log(square(2));
+
+// How to use this keyword
+
+// method -> object
+// function -> gloabl (window, global)
+
+// Method -> object example is the code below
+
+// const video = {
+//     title: 'a',
+//     play() {
+//         console.log(this);
+//     }
+// };
+
+// video.stop = function() {
+// console.log(this);
+// };
+
+// video.stop();
+
+// function -> global example is the code below
+
+// const video = {
+//     title: 'a',
+//     play() {
+//         console.log(this);
+//     }
+// };
+
+// function Video(title) {
+//     this.title = title;
+//     console.log(this);
+// }
+
+// const v = new Video('a');
+
+// global function example 2
+
+// const video = {
+//     title: 'a',
+//     tags: ['a', 'b', 'c'],
+//     showtags() {
+//         this.tags.forEach(function(tag) {
+//         console.log(this.title, tag);
+//     }, this);
+//   }
+// };
+
+// video.showtags();
